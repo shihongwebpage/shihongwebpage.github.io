@@ -239,7 +239,7 @@
                         <p>The upcoming space-based GW observatory, LISA, is expected to detect GW signals from SMBH mergers occurring at high redshifts. However, understanding the origin and growth of SMBHs in the early Universe remains an open problem in astrophysics.</p>
                         <p>In this work, we utilize the <a href="https://flaresimulations.github.io/">First Light And Reionization Epoch Simulations (FLARES)</a>, a suite of cosmological hydrodynamical zoom-in simulations, to study SMBH mergers at 5≲z≲10 across a wide range of environments. Most mergers in FLARES involve secondary SMBHs near the seed mass (m_seed≈1.5×10^5 M⊙) while primary SMBHs span up to 10^9 M⊙, resulting in mass ratios from q∼10^−4 to 1. The number of mergers increases rapidly towards lower redshifts, and the comoving total number density scales with overdensity as n_merger=10^−3.80 (1+δ)^4.56. Within the FLARES redshift range, LISA is expected to detect mergers with a rate of 0.030 yr^−1 for events with signal-to-noise ratio SNR≥10. Our study demonstrates the sensitivity of GW predictions at high redshifts to SMBH seed models and merger time delays, highlighting the need for improved modeling in future cosmological simulations to maximize LISA's scientific return.</p>
                         <p>(Image credit: <a href="https://ui.adsabs.harvard.edu/abs/2021MNRAS.500.2127L">Lovell et al. 2021</a>)</p>
-                        <a class="link" href="https://arxiv.org/abs/2505.12591">Liao et al. (2025)</a>
+                        <a class="link" href="https://ui.adsabs.harvard.edu/abs/2025MNRAS.543.3055L/abstract">Liao et al. (2025)</a>
                     </div>
                     <!-- End FLARES -->
                 </div>
@@ -257,19 +257,10 @@
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="margin-b-20">
                             <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            </div>
-                        </div>                        
-                    </div>
-                    <!-- End CCVT -->
-
-                    <!-- CCVT -->
-                    <div class="col-sm-4 sm-margin-b-50">
-                        <div class="margin-b-20">
-                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
                                 <img class="img-responsive" src="img/ccvt.jpg" alt="CCVT Image">
                             </div>
                         </div>
-                        <h4>Simulation initial conditions</h4>
+                        <h4>Initial conditions for pure dark matter simulations</h4>
                         <p>Grid and glass configurations are the two most commonly used pre-initial conditions for cosmological <i>N</i>-body simulations.</p>
                         <p>In Liao (2018), I introduced an alternative approach: the Capacity Constrained Voronoi Tessellation (CCVT), originally developed in computer graphics. As a geometrical equilibrium state, CCVT is uniform and isotropic, follows the minimal power spectrum P(k) ~ k^4 precisely, and remains stable under gravitational evolution. We showed that CCVT performs comparably to grid and glass configurations in cosmological simulations and offers a valuable tool for investigating the numerical convergence of pre-initial conditions.</p>
                         <p>In Zhang et al. (2021), we carried out a detailed numerical convergence study, quantifying the impact of different pre-initial conditions on the final properties of dark matter haloes.</p>
@@ -278,6 +269,21 @@
                         <a class="link" href="https://github.com/liaoshong/ccvt-preic">Code link</a>
                     </div>
                     <!-- End CCVT -->
+                    
+                    <!-- Two Glasses -->
+                    <div class="col-sm-4 sm-margin-b-50">
+                        <div class="margin-b-20">
+                            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                                <img class="img-responsive" src="img/two_glasses.jpg" alt="Two Glasses Image">
+                            </div>
+                        </div>
+                        <h4>Initial conditions for dark matter + gas simulations</h4>
+                        <p>Traditional cosmological hydrodynamical simulations usually assume equal-numbered but unequal-mass dark matter and baryonic particles, which can lead to spurious collisional heating due to energy equipartition. To avoid such a numerical heating effect, a simulation setup with equal-mass dark matter and baryonic particles is preferred.</p>
+                        <p>In Liao et al. (2025), we proposed a method based on the glass approach that can generate two-component particle loads with any desired particle number ratios of N_DM : N_gas. We show that the final particle load closely follows the expected minimal power spectrum, exhibits good homogeneity and isotropy properties, and remains sufficiently stable under gravitational interactions. Both the dark matter and gas components individually also exhibit uniform and isotropic distributions. It can be used to set up initial conditions with equal-mass particles that effectively mitigate the spurious collisional heating effect.</p>
+                        <a class="link" href="https://arxiv.org/abs/2511.06210">Liao et al. (2025)</a></br>
+                        <a class="link" href="https://github.com/liaoshong/gadget-2glass">Code link</a>
+                    </div>
+                    <!-- End Two Glasses -->
                 </div>
                 <!--// end row -->
 
@@ -298,7 +304,8 @@
 
                         <h3>Selected Student Projects</h3>
 
-            <p><b>Yuxi Meng: The impact of filaments on satellites (Mar 2024 - Present)</b></br>Yuxi is a PhD student at the University of Chinese Academy of Sciences (UCAS). We are investigating how cosmic filaments influence satellite galaxies using state-of-the-art cosmological simulations.</p>
+            <p><b>Yuxi Meng: The impact of filaments on satellites (Mar 2024 - Present)</b></br>Yuxi is a PhD student at the University of Chinese Academy of Sciences (UCAS). We are investigating how cosmic filaments influence the abundance of satellite galaxies using state-of-the-art cosmological simulations.</p>
+            <p>Publication: <a href="https://arxiv.org/abs/2509.22179"><b>arXiv:2509.22179 (submitted to ApJ)</b></a></p>
             <p><b>Yu Zhao: Constraining interacting dark energy models using the halo concentration-mass relation (Jan 2022 - Jun 2023)</b></br>Yu was an undergraduate student at Liaoning University. She used the observed halo concentration–mass relation to constrain the interaction parameters in interacting dark energy models.</p>
             <p>Publication: <a href="https://ui.adsabs.harvard.edu/abs/2023MNRAS.523.5962Z/abstract"><b>MNRAS 523, 5962 (2023)</b></a></p>
             <p><b>Haonan Zheng: The impact of filaments on dwarf galaxy properties (Sep 2019 - Sep 2021)</b></br>Haonan was a PhD student at UCAS. Using the Auriga simulations, he studied how filamentary structures at high redshift affect the properties of dwarf galaxies.</p>
